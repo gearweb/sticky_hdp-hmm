@@ -9,7 +9,7 @@ Can build/run docker image with
 docker build -t jupyterlab .
 docker container rm jupyterlab; docker run -it -p 8888:8888 -v ~/projects:/home/jovyan/work jupyterlab
 ```
-or just use docker compose. The vscode [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extenstion, settigns in `/.devcontainer/devcontainer.json` is setup to use the docker-compose file.
+or just use docker compose. The vscode [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extenstion, settigns in `/.devcontainer/devcontainer.json` is setup to use the docker-compose file. [ref](https://ruddra.com/posts/vs-code-remote-docker-development/)
 ```
 docker-compose up
 ```
