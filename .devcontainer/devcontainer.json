@@ -1,0 +1,17 @@
+{
+    "name": "Python 3",
+    "context": "..",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "jlab_service",
+    "workspaceFolder": "/home/jovyan/work/stochastic_process",
+    "extensions": [
+      "ms-python.python",
+      "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+      "python.pythonPath": "/opt/conda/bin/python",
+      "python.linting.pylintEnabled": true,
+      "python.linting.enabled": true
+    }
+  }
+  

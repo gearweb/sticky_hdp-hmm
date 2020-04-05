@@ -1,0 +1,9 @@
+version: '3'
+services:
+  jlab_service:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ~/projects:/home/jovyan/work
+
