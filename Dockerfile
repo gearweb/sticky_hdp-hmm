@@ -2,9 +2,10 @@ FROM jupyter/scipy-notebook:latest
 
 USER root
 
-RUN jupyter labextension install jupyterlab-plotly
-
+# ssh keys are mapped with docker-compose
 RUN apt-get update && apt-get install -y --no-install-recommends keychain
+
+RUN jupyter labextension install jupyterlab-plotly
 
 RUN conda install --quiet --yes \
     'plotly'
